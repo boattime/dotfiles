@@ -177,18 +177,31 @@ bindsym $mod+r mode "resize"
 # Containers board
 default_border pixel
 
-# class                 border  backgr. text    indicator child_border
-client.focused #a69100 #a69100 #fdf6e3 #a69100
-client.focused_inactive #073642 #073642 #eee8d5 #073642
-client.unfocused #073642 #073642 #93a1a1 #586e75
-client.urgent #d33682 #d33682 #fdf6e3 #dc322f
+client.focused          #665c54 #665c54 #eddbb2 #2e9ef4   #665c54
+client.focused_inactive #282828 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #3c3836 #3c3836 #a89984 #292d2e   #222222
+client.urgent           #cc241d #cc241d #ebdbb2 #cc241d   #cc241d
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
+client.background       #ffffff
 # Focus follows mouse
 focus_follows_mouse no
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+        colors {
+		# Whole color settings
+		background #3c3836
+		statusline #ebdbb2
+		separator  #666666
+
+		
+		focused_workspace  #458588 #458588 #ebdbb2
+		active_workspace   #83a598 #83a598 #ebdbb2
+		inactive_workspace #504945 #504945 #ebdbb2
+		urgent_workspace   #cc241d #cc241d #504945
+	}
         position top
         status_command i3status
 }
