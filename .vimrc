@@ -13,7 +13,7 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 
-set colorcolumn=80
+"set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 call plug#begin('~/.vim/plugged')
@@ -32,9 +32,9 @@ if executable('rg')
 endif
 
 let mapleader = " "
-let g:netrw_browse_split = 0
+"let g:netrw_browse_split = 4
 let g:netrw_banner = 0
-let g:netrw_winsize = 25
+"let g:netrw_winsize = 25
 let g:netrw_local_rmdir='rm -r'
 
 let g:ctrlp_use_caching = 0
@@ -47,7 +47,7 @@ nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>u :UndotreeShow<CR>
-nnoremap <leader>pv :wincmd v<bar>:Ex<bar>:vertical resize 30<CR>
+nnoremap <leader>pv :Ex<CR>
 nnoremap <leader>ps :Rg<CR>
 nnoremap <Leader>+ :vertical resize +5<CR>
 nnoremap <Leader>- :vertical resize -5<CR>
