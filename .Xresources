@@ -1,4 +1,3 @@
-URxvt*termName: screen-256color
 ! hard contrast: *background: #1d2021
 *background: #282828
 ! soft contrast: *background: #32302f
@@ -36,5 +35,5 @@ URxvt.keysym.M-v: perl:clipboard:paste
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
 
-URxvt.font: xft:monospace:size=10
+URxvt.font: xft:monospace:size=12
 URxvt.scrollBar: false
