@@ -22,14 +22,17 @@ Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-utils/vim-man'
 Plug 'lyuts/vim-rtags'
-Plug 'kien/ctrlp.vim'
-Plug 'ycm-core/YouCompleteMe'
+Plug 'https://github.com/kien/ctrlp.vim.git'
+Plug 'https://github.com/Valloric/YouCompleteMe.git'
 Plug 'mbbill/undotree'
+Plug 'https://github.com/jpalardy/vim-slime.git'
 call plug#end()
 
 if executable('rg')
     let g:rg_derive_root='true'
 endif
+
+let g:slime_target = "tmux"
 
 let mapleader = " "
 "let g:netrw_browse_split = 4
