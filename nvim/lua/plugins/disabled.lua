@@ -7,4 +7,5 @@ return {
   { "stevearc/aerial.nvim", enabled = false },
   { "mfussenegger/nvim-dap-python", enabled = false },
   { "ahmedkhalf/project.nvim", enabled = false },
+  { "ahmedkhalf/which-key.nvim", enabled = false },
 }
