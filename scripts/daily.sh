@@ -3,7 +3,7 @@
 current_date=$(date +"%Y-%m-%d")
 current_time=$(date +"%H:%M:%S")
 year=$(date +"%Y")
-week_number=$(date +"%V")
+week_number=$(date +"%W")
 # Define file paths
 template_file="/Users/mteibel/Documents/notes/Templates/Daily.md"
 new_file="/Users/mteibel/Documents/notes/Daily/$year/W$week_number/$current_date.md"
